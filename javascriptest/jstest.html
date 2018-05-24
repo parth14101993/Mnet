@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+button{cursor: pointer;}
+h2{padding-left: 97px;}
+img{height:700px; width:400px;}
+
+div{padding: 0 0 10px 82px;}
+</style>
+
+<h2>Select Any button </h2>
+<div id="btn">
+<button type="button" id="black" onclick="myFunction(this.id)">Black</button>
+<button type="button" id="gold" onclick="myFunction(this.id)">gold</button>
+<button type="button" id="blue" onclick="myFunction(this.id)">blue</button>
+<button type="button" id="rosegold" onclick="myFunction(this.id)">rose gold</button>
+</div>
+<img id="img" />
+
+<script>
+function myFunction (id)
+{ 
+    var img = document.getElementById('img');
+    if(id==="black")
+    { 
+        img.src = "black.jpeg";
+    }
+    if(id==="gold")
+    {
+        img.src ="gold.jpeg";
+    }
+    if(id==="blue")
+    {
+        img.src ="blue.jpeg" ;
+    } 
+    if(id === 'rosegold')
+     {
+        img.src ="rose-gold.jpeg" ;
+     }
+}
+</script>
+
+</body>
+</html>
